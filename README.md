@@ -69,13 +69,10 @@ Will run the video at 48 FPS. The default FPS is 60.
 
 [//]: # (Image References)
 
-[image1]: ./examples/left.png "left camera"
-[image2]: ./examples/center.png "center camera"
-[image3]: ./examples/right.png "right camera"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+[image1]: ./examples/left.jpg "left camera"
+[image2]: ./examples/center.jpg "center camera"
+[image3]: ./examples/right.jpg "right camera"
+
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -178,7 +175,10 @@ _________________________________________________________________
 To develop a good driving behavior I used only the sample data provided by Udacity. On the other hand, I tried to well augment the data to be able to train my model being capable of autonomously driving in the udacity simulator - track 1.
 Here are the three views of the left, center and right camera for a scene:
 
-![alt text][image1] ![alt text][image2] ![alt text][image3]
+|  Left Camera   |   Center Camera  |  Right Camera  |
+|:-------------:|:-------------:|:-------------:|
+| ![alt text][image1] | ![alt text][image2] | ![alt text][image3] |
 
 To augment the data sat, I also flipped images and angles to overcome the overfitting for specific maneruvers. Data shufflind was also encorporated in my pipeline.
+
 
