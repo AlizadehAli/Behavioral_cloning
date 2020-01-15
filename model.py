@@ -54,8 +54,6 @@ def process_batch(batch_sample):
 
         image = cv2.imread(image_path + image_name)
         rgb_image = bgr2rgb(image)
-        # cropped = cropimg(rgb_image)
-        # resized = resize(cropped)
 
         images.append(rgb_image)
 
@@ -88,12 +86,6 @@ def bgr2rgb(image):
 def flipimg(image):
     return cv2.flip(image, 1)
 
-def cropimg(image):
-    cropped = image[60:130, :]
-    return cropped
-
-def resize(image, shape=(160, 70)):
-    return cv2.resize(image, shape)
 #=======================================================================================================================
 
 def model(loss='mse', optimizer='adam'):
